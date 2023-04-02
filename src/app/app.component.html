@@ -1,0 +1,57 @@
+<div class="container">
+
+  <div fxFlex fxLayout="column"
+       fxLayoutAlign="space-between center"
+       fxLayoutGap="2px">
+
+    <!-- Header -->
+    <div class="header-section">
+
+      <header class="header gradBlue">
+        <!-- Brand -->
+        <div class="head-container ">
+
+          <div class="logo-container ">
+            <div>
+              <a class="" routerLinkActive='active' routerLink='/home'>
+                <img class="brandLogo imgRnd10 imageShadow" src='../assets/logos/P2.gif' alt="Pensadotech">
+              </a>
+            </div>
+            <div>
+              <h3 class="brandName"> Pensadotech </h3>
+            </div>
+          </div>
+
+          <div class="logoOtherContainer ">
+            <a class="" routerLinkActive='active'
+                       href='https://github.com/pensadotech'
+                       target="_blank" title="go to GitHub">
+              <img class="logoOther imgRnd10 imageShadow" src='../assets/logos/githubPage.jpg' alt="Github">
+            </a>
+          </div>
+
+        </div>
+
+      </header>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-section" fxFlex="2 1 0">
+
+       <!-- Location where selected components will show -->
+       <router-outlet></router-outlet>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-section">
+
+      <footer class="footer gradBlue">
+        <p>Copyright &copy; </p>
+      </footer>
+
+    </div>
+  </div>
+
+</div>

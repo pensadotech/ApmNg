@@ -1,0 +1,17 @@
+<div fxLayout="row" fxLayoutAlign="start center">
+
+  <!-- <div [title]="selectedTag.name"
+       *ngIf="(selectedTag.name)"
+       [ngClass]="[selectedTag.class]">
+      <mat-icon>{{selectedTag.icon}}</mat-icon>
+  </div> -->
+
+  <mat-chip-listbox [attr.aria-label]="selectedTag.name">
+    <mat-chip color="accent"
+          [title]="selectedTag.name"
+           *ngIf="(selectedTag.name)" >
+       {{selectedTag.name}}
+      </mat-chip>
+  </mat-chip-listbox>
+
+</div>

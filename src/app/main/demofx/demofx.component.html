@@ -1,0 +1,25 @@
+
+<h2> Demo FX </h2>
+
+<div class="container" >
+  <!-- fxLayoutAlign= "<main-axis> <cross-axis>"-->
+  <!--    main-axis  or vertical-axis  : start, center, end, space-around, space-between, space-evenly -->
+  <!--    cross-axis or horizontal-axis: start,center,end, stretch-->
+  <!-- Use fxFlex in order for other parameters to take effect -->
+  <div fxFlex fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="5px">
+    <div class="child-1">block-1</div>
+    <div class="child-2">block-2</div>
+    <div class="child-3">block-3</div>
+  </div>
+
+</div>
+
+<div class="container" >
+
+  <div fxFlex fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="5px">
+    <div class="child-1" fxFlex="2 1 0">block-1</div>
+    <div class="child-2" fxFlex="1 2 0">block-2</div>
+    <div class="child-3" fxFlex>block-3</div>
+  </div>
+
+</div>

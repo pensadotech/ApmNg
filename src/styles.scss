@@ -1,0 +1,86 @@
+/* You can add global styles to this file, and also import other style files */
+$font-stack: Roboto,"Helvetica Neue", sans-serif;
+$base-height: 100%;
+$bodyBackgroundImage : './assets/backgrounds/Background2.jpg';
+
+
+html, body {
+  height: $base-height;
+}
+
+body {
+  font-family: 100% $font-stack;
+  /* Remove margins and padding around content */
+  margin: 0;
+  padding: 0;
+  /* Fix background during scrolling */
+  background-attachment: fixed;
+  /* Use scalable background image (cross borwser) */
+  background-image: url($bodyBackgroundImage);
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #dbe1e6;
+}
+
+// Class to disable a menu item
+.disabled {
+  pointer-events:none; // this makes element not clickable
+  opacity:0.6;         // This grays out the element to make it look disbled
+ }
+
+  // Gradient color
+ .gradBlue {
+   background: linear-gradient(180deg, #003A6C 10%, gray 80%);
+   background: -webkit-linear-gradient(180deg, #003A6C 10%, gray 80%);
+   background: -moz-linear-gradient(180deg, #003A6C 10%, gray 80%);
+   background: -ms-linear-gradient(180deg, #003A6C 10%, gray 80%);
+   background: -o-linear-gradient(180deg, #003A6C 10%, gray 80%);
+ }
+
+// Rounded image corners 10px
+.imgRnd10 {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+// Rounded image corners 5px
+.imgRnd5 {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+// Add drop shadow
+.imageShadow {
+  -webkit-box-shadow: 2px 7px 7px 2px gray;
+  -moz-box-shadow: 2px 7px 7px 2px gray;
+  box-shadow: 2px 7px 7px 2px gray;
+}
+
+// Rotate Image
+.imageRotate {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+
+// aux tools
+.redBorder {
+  border: 2px solid red;
+}
+
+.greenBorder {
+  border: 2px solid green;
+}
+
+.blueBorder {
+  border: 2px solid blue;
+}
