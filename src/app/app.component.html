@@ -11,7 +11,23 @@
         <!-- Brand -->
         <div class="head-container ">
 
+          <div class="mainmenu">
+            <button mat-icon-button color="warn"
+                  [matMenuTriggerFor]="menu"
+                  aria-label="Example icon-button with a menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item> <a class='nav-link' routerLinkActive='active' routerLink='/home'>Home </a> </button>
+              <button mat-menu-item> <a class='nav-link' routerLinkActive='active' routerLink='/demo'>Demo-ctrl </a> </button>
+              <button mat-menu-item> <a class='nav-link' routerLinkActive='active' routerLink='/demofx'>Demo-Fx </a> </button>
+              <button mat-menu-item> <a class='nav-link' routerLinkActive='active' routerLink='/demodlg'>Demo-Dlg </a> </button>
+              <button mat-menu-item> <a class='nav-link' routerLinkActive='active' routerLink='/products'>Products </a> </button>
+            </mat-menu>
+          </div>
+
           <div class="logo-container ">
+
             <div>
               <a class="" routerLinkActive='active' routerLink='/home'>
                 <img class="brandLogo imgRnd10 imageShadow" src='../assets/logos/P2.gif' alt="Pensadotech">
