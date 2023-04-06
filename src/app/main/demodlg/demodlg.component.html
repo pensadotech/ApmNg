@@ -1,0 +1,25 @@
+<p>demodlg works!</p>
+
+<ol>
+  <li>
+    <mat-form-field appearance="fill">
+      <mat-label>What's your name?</mat-label>
+      <input matInput [(ngModel)]="userName">
+    </mat-form-field>
+  </li>
+  <li>
+    <button mat-raised-button color="primary" (click)="openDialog()">Pick two</button>
+  </li>
+  <li *ngIf="userAnimal1">
+    You chose: <i>{{userAnimal1}}</i>
+  </li>
+  <li *ngIf="userAnimal2">
+    You chose: <i>{{userAnimal2}}</i>
+  </li>
+  <li>
+    Option 1: <i>{{userOption1}}</i>
+  </li>
+  <li>
+    Option 2: <i>{{userOption2}}</i>
+  </li>
+</ol>

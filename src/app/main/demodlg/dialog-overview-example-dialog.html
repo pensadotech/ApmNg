@@ -1,0 +1,30 @@
+<h1 mat-dialog-title>Hi {{data.name}}</h1>
+<div mat-dialog-content >
+  <p>What's your favorite animal?</p>
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Favorite Animal 1</mat-label>
+      <input matInput [(ngModel)]="data.animal1">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Favorite Animal 2</mat-label>
+      <input matInput [(ngModel)]="data.animal2">
+    </mat-form-field>
+  </div>
+  <div>
+      <mat-slide-toggle [(ngModel)]="data.option1" >
+          Option 1
+      </mat-slide-toggle>
+  </div>
+  <div>
+    <mat-checkbox [(ngModel)]="data.option2">
+      Option 2
+    </mat-checkbox>
+</div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button  (click)="onNoClick()">No Thanks</button>
+  <button mat-button color="primary" [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+</div>

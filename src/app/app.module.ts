@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 // needed for services
 // ref: https://www.angularjswiki.com/angular/no-provider-for-httpclient/
-import { HttpClientModule } from '@angular/common/http';  
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
