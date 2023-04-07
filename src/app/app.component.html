@@ -6,23 +6,33 @@
 
     <!-- Header -->
     <div class="header-section">
-
       <header class="header gradBlue">
+
         <!-- Brand -->
         <div class="head-container ">
 
-          <div class="mainmenu">
-            <button mat-icon-button color="warn"
+          <div class="mainmenu ">
+            <button mat-mini-fab color="primary"
                   [matMenuTriggerFor]="menu"
                   aria-label="Example icon-button with a menu">
-              <mat-icon>more_vert</mat-icon>
+              <mat-icon>menu</mat-icon>
             </button>
-            <mat-menu #menu="matMenu">
-              <button mat-menu-item> <a class='nav-link' routerLinkActive='active' routerLink='/home'>Home </a> </button>
-              <button mat-menu-item> <a class='nav-link' routerLinkActive='active' routerLink='/demo'>Demo-ctrl </a> </button>
-              <button mat-menu-item> <a class='nav-link' routerLinkActive='active' routerLink='/demofx'>Demo-Fx </a> </button>
-              <button mat-menu-item> <a class='nav-link' routerLinkActive='active' routerLink='/demodlg'>Demo-Dlg </a> </button>
-              <button mat-menu-item> <a class='nav-link' routerLinkActive='active' routerLink='/products'>Products </a> </button>
+            <mat-menu #menu="matMenu" xPosition="after" >
+              <button mat-menu-item class="matMenu">
+                <a class='nav-link' routerLinkActive='active' routerLink='/home'>Home </a>
+              </button>
+              <button mat-menu-item class="matMenu">
+                <a class='nav-link' routerLinkActive='active' routerLink='/demo'>Demo-ctrl </a>
+              </button>
+              <button mat-menu-item class="matMenu">
+                <a class='nav-link' routerLinkActive='active' routerLink='/demofx'>Demo-Fx </a>
+              </button>
+              <button mat-menu-item class="matMenu">
+                <a class='nav-link' routerLinkActive='active' routerLink='/demodlg'>Demo-Dlg </a>
+              </button>
+              <button mat-menu-item class="matMenu">
+                <a class='nav-link' routerLinkActive='active' routerLink='/products'>Products </a>
+              </button>
             </mat-menu>
           </div>
 

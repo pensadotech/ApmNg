@@ -1,25 +1,28 @@
+<div class="container">
 
-<h2> Demo FX </h2>
+  <h1> Demo fxFlex and fxLayout </h1>
 
-<div class="container" >
-  <!-- fxLayoutAlign= "<main-axis> <cross-axis>"-->
-  <!--    main-axis  or vertical-axis  : start, center, end, space-around, space-between, space-evenly -->
-  <!--    cross-axis or horizontal-axis: start,center,end, stretch-->
-  <!-- Use fxFlex in order for other parameters to take effect -->
-  <div fxFlex fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="5px">
-    <div class="child-1">block-1</div>
-    <div class="child-2">block-2</div>
-    <div class="child-3">block-3</div>
+  <div class="basic-container">
+    <!-- fxLayoutAlign= "<main-axis> <cross-axis>"-->
+    <!--    main-axis  or vertical-axis  : start, center, end, space-around, space-between, space-evenly -->
+    <!--    cross-axis or horizontal-axis: start,center,end, stretch-->
+    <!-- Use fxFlex in order for other parameters to take effect -->
+    <div fxFlex fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+      <div class="child-1">block-1</div>
+      <div class="child-2">block-2</div>
+      <div class="child-3">block-3</div>
+    </div>
+
   </div>
 
-</div>
+  <div class="grow-container">
 
-<div class="container" >
+    <div fxFlex fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+      <div class="child-1" fxFlex="2 1 0">block-1</div>
+      <div class="child-2" fxFlex="1 2 0">block-2</div>
+      <div class="child-3" fxFlex>block-3</div>
+    </div>
 
-  <div fxFlex fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="5px">
-    <div class="child-1" fxFlex="2 1 0">block-1</div>
-    <div class="child-2" fxFlex="1 2 0">block-2</div>
-    <div class="child-3" fxFlex>block-3</div>
   </div>
 
 </div>

@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { DemofxRoutingModule } from './demofx-routing.module';
 import { DemofxComponent } from './demofx.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   imports: [
     CommonModule,
     DemofxRoutingModule,
-    FlexLayoutModule 
+    FlexLayoutModule
   ]
 })
 export class DemofxModule { }

@@ -1,48 +1,53 @@
-$home-font-family: Arial, 'Helvetica, sans-serif';
+$home-font-family: Arial,'Helvetica, sans-serif';
 
 @mixin home-container-common (){
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   justify-content: center;
-  align-items: center;
 }
 
-@mixin home-font-family($fontSize: 2.0rem){
+@mixin home-font-family($fontSize: 20px){
   font-family: $home-font-family;
-  font:bolder;
   font-size:$fontSize;
 }
 
-.home-container {
-  @include home-container-common();
+// Container ...............................
+.container {
+  margin: 15px;
+  height: 90%;
+  width: 98%;
+  //border:2px solid red;
+}
+
+.child-1 {
+ // border: 2px solid red;
+}
+
+.child-2 {
+  // border: 2px solid orange;
 }
 
 .home-title-container {
   @include home-container-common();
-  width: 70%;
-}
-
-.home-text-primary {
-   @include home-font-family;
-   color:blue;
-   margin: 2rem 0rem 0rem 0rem;
-}
-
-.home-text-scondary {
-  @include home-font-family;
-  color:gray;
-  margin: 1rem 0rem 0rem 0rem;
-}
-
-.home-info  {
-  @include home-font-family($fontSize: 1.2rem);
-  margin-top: 2rem;
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+
+  h1 {
+    @include home-font-family($fontSize: 40px);
+    color: rgb(34, 37, 219);
+  }
+
+  h2 {
+    @include home-font-family($fontSize: 24px);
+    color: rgb(161, 95, 158);
+  }
+
 }
 
-
+.home-info {
+  @include home-container-common();
+  @include home-font-family($fontSize: 20px);
+  color: rgb(80, 80, 82);
+  align-items: left;
+  margin-top: 40px;
+}
