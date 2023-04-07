@@ -15,7 +15,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
   imageWidth: number = 50;
   imageMargin: number = 2;
   showImage: boolean = true;
-  errMsg: string = '';
+  errorMessage: string = '';
   sub!: Subscription;
   subArray: Subscription[] = [];
 
@@ -60,7 +60,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
         this.products = products;
         this.filteredProducts = this.products;
       },
-      error: err => this.errMsg = err
+      error: err => this.errorMessage = err
     });
 
     // For cases where multiple subscriptions are injected

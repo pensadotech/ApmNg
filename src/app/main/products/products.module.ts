@@ -5,11 +5,13 @@ import { ProductsRoutingModule } from './products-routing.module';
 import { ProductListComponent } from './product-list.component';
 import { ConvertToSpacesPipe } from '../shared/convert-to-spaces.pipe';
 import { SharedModule } from '../shared/shared.module';
+import { ProductDetailComponent } from './product-detail.component';
 
 @NgModule({
   declarations: [
     ProductListComponent,
-    ConvertToSpacesPipe
+    ConvertToSpacesPipe,
+    ProductDetailComponent
   ],
   imports: [
     CommonModule,
