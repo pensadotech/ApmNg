@@ -1,13 +1,17 @@
 # APMng
 
 This project uses Debora Kurata's APM project, but uses routing lazy loading and SCSS instead.
-Additionally, the project test adding a new 'main' folder to hold the components, as a way to set the
+The project test adding a new 'main' folder to hold the components, as a way to set the
 foundation for larger projects organization.
 
 In this case, the app.module consumes child routes from main/main-routing.module.ts, in where all routes
 are defined. However, main-routing.module.ts consume child routes under the products/product-routing.module.test
 
-Additionally, the project offer components to demostrate some capabilities for angular.material,  fxFlex fxLayout, and handling a dialog box that passes back to caller a set of data, not just a single result.
+The project was made using Angular ver 15, in where traditional V13 guards are deprecated. In this example
+a Functional Router guard was used following Deborah's idea.
+
+Finally, the project offer components to demonstrates some capabilities for angular.material,  
+fxFlex fxLayout, and handling a dialog box that passes back to caller a set of data, not just a single result.
 
 ## Lazy loading
 
